@@ -60,8 +60,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Blog App <a name="about-project"></a>
 
-> A blog app built with RoR.
-
+> A blog app that allows users to add Comments, Posts and Likes. Built with RoR.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -108,9 +107,8 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **Add Books, Music Albums and Games**
-- **Preserve data in files**
-- **List all things inside the app like genres, authors and labels**
+- **Add Comments, Posts and Likes**
+- **Preserve data in database**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,7 +154,8 @@ Install this project with:
 
 
 ```sh
-  cd catalog-of-my-things
+  cd blog-app-rails
+  bundle install
 ```
 
 ### Usage
@@ -206,8 +205,8 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Improve UI**
-- [ ] **Add more tests**
-- [ ] **Add more categories and labels**
+- [ ] **Add tests**
+- [ ] **Add Models**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
