@@ -60,7 +60,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Blog App <a name="about-project"></a>
 
-> This project is a catalog of things where users can choose an option like creating Books, Music Albums, and Games with information like authors and genres. This app preserves the data for users in files and users can filter the information by listing the information about all authors, games, music albums, and more. [You can see the description of the project here](https://drive.google.com/file/d/1b0fmKIGfi_r9Ygz4OcG_1pTHSWK2Xcwu/view)
+> A blog app built with RoR.
 
 
 ## 🛠 Built With <a name="built-with"></a>
