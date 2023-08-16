@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   database: blog_app_rails_development
-  username: luiscarlosvd
+  username: postgres
   password: luis11
 
   # The specified database role being used to connect to postgres.
@@ -60,7 +60,7 @@ development:
 test:
   <<: *default
   database: blog_app_rails_test
-  username: luiscarlosvd
+  username: postgres
   password: luis11
 
 # As with config/credentials.yml, you never want to store sensitive information,

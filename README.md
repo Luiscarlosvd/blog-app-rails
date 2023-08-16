@@ -109,6 +109,8 @@ After you're finished please remove all the comments and instructions!
 
 - **Add Comments, Posts and Likes**
 - **Preserve data in database**
+- **Create models**
+- **Methods to update comments, likes and posts counters and more**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,7 +208,7 @@ Example:
 
 - [ ] **Improve UI**
 - [ ] **Add tests**
-- [ ] **Add Models**
+- [ ] **Add validations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
