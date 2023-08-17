@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
   before_validation :set_default_likes_n_comment_counters
-  
+
   has_many :likes
   has_many :comments
   belongs_to :author, class_name: 'User'
