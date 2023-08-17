@@ -1,4 +1,6 @@
 class Post < ApplicationRecord
+  before_validation :set_default_likes_n_comment_counters
+  
   has_many :likes
   has_many :comments
   belongs_to :author, class_name: 'User'
@@ -15,5 +17,10 @@ class Post < ApplicationRecord
 
   def recent_comments
     comments.order(created_at: :desc).limit(5)
+  end
+
+  def set_default_likes_n_comment_counters
+    self.comments_counter ||= 0
+    self.likes_counter ||= 0
   end
 end
