@@ -111,6 +111,7 @@ After you're finished please remove all the comments and instructions!
 - **Preserve data in database**
 - **Create models**
 - **Methods to update comments, likes and posts counters and more**
+- **Create controllers**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,8 +208,8 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Improve UI**
-- [ ] **Add tests**
-- [ ] **Add validations**
+- [ ] **Show users at index page**
+- [ ] **Show information from database on every page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
