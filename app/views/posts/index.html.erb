@@ -1,1 +1,30 @@
-<h1>Here is a list of posts for a given user</h1>
+<section class="my-4 flex w-full">
+    <div class="p-10 border-solid border-black border-2">
+        <img src=<%= @user.photo %> alt="User Photo">
+    </div>
+        <div class="border-solid border-black border-2 px-8 ml-4 my-1 w-full flex justify-between items-center">
+        <a href="<%= user_path(@user) %>">
+            <h2 class="text-3xl font-bold"><%= @user.name %></h2> 
+        </a>
+        <p class="self-end mb-2">Number of posts: <%= @user.posts_counter%></p>
+    </div>
+</section>
+<ul class="w-full">
+    <% @posts.each do |post| %>
+        <li class="my-4 flex flex-col w-full">
+            <div class="p-3 flex flex-col w-full border-solid border-black border-2">
+                <h2 class="text-xl font-bold"><%= post.title %></h2> 
+                <p class="my-3"><%= truncate(post.text, length: 200, omission: '...') %></p>
+                <p class="self-end">Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
+                <a class="self-center w-20 text-center py-1 border-solid border-black border-2" href="<%= user_post_path(@user, post) %>">See post</a>
+            </div>
+            <ul class="p-3 mt-px flex flex-col w-full border-solid border-black border-2">
+                <% post.recent_comments.each do |comment| %>
+                    <li>
+                        <p><%= comment.author.name %>: <%= comment.text %></p>
+                    </li>
+                <% end %>
+            </ul>
+        </li>
+    <% end %>
+</ul>
