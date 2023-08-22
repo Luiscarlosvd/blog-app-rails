@@ -1,1 +1,29 @@
-<h1>Here is the description and posts for a given user</h1>
+<section class="my-4 flex w-full">
+    <div class="p-10 border-solid border-black border-2">
+        <img src=<%= @user.photo %> alt="User Photo">
+    </div>
+        <div class="border-solid border-black border-2 px-8 ml-4 my-1 w-full flex justify-between items-center">
+        <a href="<%= user_path(@user) %>">
+            <h2 class="text-3xl font-bold"><%= @user.name %></h2> 
+        </a>
+        <p class="self-end mb-2">Number of posts: <%= @user.posts_counter%></p>
+    </div>
+</section>
+<div class="p-3 mb-3 border-solid border-black border-2">
+    <h3 class="font-bold">Bio</h3>
+    <p class="my-3"><%= @user.bio %></p>
+</div>
+<ul class="w-full">
+    <% @recent_posts.each do |post| %>
+        <li class="my-2 flex w-full border-solid border-black border-2">
+            <div class="p-3 flex flex-col w-full">
+                <h2 class="text-xl font-bold"><%= post.title %></h2> 
+                <p class="my-3"><%= truncate(post.text, length: 200, omission: '...') %></p>
+                <p class="self-end">Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
+            </div>
+        </li>
+    <% end %>
+</ul>
+<div class="flex justify-center my-4">
+    <a class="py-1 px-2 border-solid border-black border-2" href="<%= user_posts_path(@user) %>">See all posts</a>
+</div>
