@@ -109,9 +109,10 @@ After you're finished please remove all the comments and instructions!
 
 - **Add Comments, Posts and Likes**
 - **Preserve data in database**
-- **Create models**
+- **Users index page**
 - **Methods to update comments, likes and posts counters and more**
-- **Create controllers**
+- **User posts page**
+- **User description page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,8 +209,8 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Improve UI**
-- [ ] **Show users at index page**
-- [ ] **Show information from database on every page**
+- [ ] **Authentication for users**
+- [ ] **Add more functionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
