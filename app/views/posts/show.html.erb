@@ -5,6 +5,7 @@
             <p>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></p>
         </div>
         <p class="my-3"><%= @post.text %></p>
+        <%= render partial: 'likes/form' %>
     </div>
     <ul class="p-3 mt-px flex flex-col w-full border-solid border-black border-2">
         <% @post.comments.each do |comment| %>
@@ -14,6 +15,7 @@
         <% end %>
     </ul>
 </section>
-<div class="flex justify-center my-4">
+<div class="flex justify-center my-4 gap-1">
     <a class="py-1 px-2 border-solid border-black border-2" href="<%= new_user_post_comment_path(@user, @post) %>">Add comment</a>
+    <a class="py-1 px-2 border-solid border-black border-2" href="<%= user_posts_path(@user) %>">Go back</a>
 </div>
