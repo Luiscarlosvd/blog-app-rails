@@ -20,7 +20,6 @@ RSpec.describe 'posts/index', type: :system do
       Comment.create(text: 'second comment', author: user1, post:)
     end
 
-
     before do
       visit user_post_path(user, post)
     end
