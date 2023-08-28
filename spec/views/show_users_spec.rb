@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'users/show', type: :system do
-  describe 'index page' do
+  describe 'show page' do
     let!(:user) do
       User.create(name: 'John Doe', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'teacher from Mexico',
                   posts_counter: 3)
