@@ -13,6 +13,9 @@
 
   <body>
     <main class="margin-3 mt-12 px-5 flex flex-col">
+      <% if user_signed_in? %>
+        <%= button_to "LogOut", destroy_user_session_path, method: :delete %>
+      <% end %>
       <% flash.each do |message_type, message| %>
         <div class="flash-<%= message_type %>"><%= message %></div>
       <% end %>
