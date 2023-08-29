@@ -113,6 +113,7 @@ After you're finished please remove all the comments and instructions!
 - **Methods to update comments, likes and posts counters and more**
 - **User posts page**
 - **User description page**
+- **Users authentication**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -219,7 +220,6 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Improve UI**
-- [ ] **Authentication for users**
 - [ ] **Add more functionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
