@@ -202,6 +202,12 @@ Example:
 - Twitter: [@Luiscarlosvd29](https://twitter.com/Luiscarlosvd29)
 - LinkedIn: [Luis Valera](https://www.linkedin.com/in/luis-valera-6a5749267/)
 
+👤 **Martín Ezequiel González**
+
+- GitHub: [@Mar12358](https://github.com/Mar12358)
+- Twitter: [@MarezegonZ](https://twitter.com/MarezegonZ)
+- LinkedIn: [Martin Ezequiel Gonzalez](https://www.linkedin.com/in/martin-ezequiel/)
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
