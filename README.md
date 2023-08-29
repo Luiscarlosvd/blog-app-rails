@@ -167,6 +167,8 @@ Install this project with:
 To run the project, execute the following command:
 
 ```
+rails tailwindcss:watch
+control + c 
 rails s
 ```
 
@@ -175,6 +177,8 @@ rails s
 To run tests, run the following command:
 
 ```
+rails tailwindcss:watch
+control + c
 rspec spec
 ```
 
@@ -202,6 +206,12 @@ Example:
 - Twitter: [@Luiscarlosvd29](https://twitter.com/Luiscarlosvd29)
 - LinkedIn: [Luis Valera](https://www.linkedin.com/in/luis-valera-6a5749267/)
 
+👤 **Martín Ezequiel González**
+
+- GitHub: [@Mar12358](https://github.com/Mar12358)
+- Twitter: [@MarezegonZ](https://twitter.com/MarezegonZ)
+- LinkedIn: [Martin Ezequiel Gonzalez](https://www.linkedin.com/in/martin-ezequiel/)
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
