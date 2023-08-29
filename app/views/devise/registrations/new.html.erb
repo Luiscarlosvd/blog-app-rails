@@ -1,0 +1,36 @@
+<div class="flex flex-col items-center gap-3">
+  <h2>Sign up</h2>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field mt-3">
+      <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "p-2 border-solid border-black border-2", placeholder: 'Name' %>
+    </div>
+
+    <div class="field mt-3">
+      <%= f.text_field :bio, autofocus: true, autocomplete: "bio", class: "p-2 border-solid border-black border-2", placeholder: 'Bio' %>
+    </div>
+
+    <div class="field mt-3">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "p-2 border-solid border-black border-2", placeholder: 'Email' %>
+    </div>
+
+    <div class="field mt-3">
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password", class: "p-2 border-solid border-black border-2", placeholder: 'Password' %>
+    </div>
+
+    <div class="field mt-3">
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "p-2 border-solid border-black border-2", placeholder: 'Password confirmation' %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Sign up", class: "p-2 border-solid border-black border-2 w-full mt-5 cursor-pointer" %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+</div>
