@@ -6,7 +6,9 @@
         </div>
         <p class="my-3"><%= @post.text %></p>
         <%= render partial: 'likes/form' %>
-        <%= render partial: 'posts/delete', locals: { model: @post, url: user_post_path(@user, @post) } %>
+        <% if can? :destroy , @post %>
+            <%= render partial: 'posts/delete', locals: { model: @post, url: user_post_path(@user, @post) } %>
+        <% end %>
     </div>
     <ul class="p-3 mt-px flex flex-col w-full border-solid border-black border-2">
         <% @post.comments.each do |comment| %>
